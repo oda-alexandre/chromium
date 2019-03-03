@@ -1,25 +1,31 @@
 # CHROMIUM
 
-![chromium](https://raw.githubusercontent.com/oda-alexandre/chromium/master/img/logo-chromium.png) ![docker](https://raw.githubusercontent.com/oda-alexandre/chromium/master/img/logo-docker.png)
+[![dockeri.co](https://dockeri.co/image/alexandreoda/atom)](https://hub.docker.com/r/alexandreoda/atom)
 
 
 ## INDEX
 
-- [Build Docker](#BUILD)
+- [Badges](#BADGES)
 - [Introduction](#INTRODUCTION)
 - [Prerequis](#PREREQUIS)
 - [Installation](#INSTALLATION)
 - [License](#LICENSE)
 
 
-## BUILD DOCKER
+## BADGES
 
-[![chromium docker build](https://img.shields.io/docker/build/alexandreoda/chromium.svg)](https://hub.docker.com/r/alexandreoda/chromium)
+[![version](https://images.microbadger.com/badges/version/alexandreoda/atom.svg)](https://microbadger.com/images/alexandreoda/atom)
+[![size](https://images.microbadger.com/badges/image/alexandreoda/atom.svg)](https://microbadger.com/images/alexandreoda/atom")
+[![build](https://img.shields.io/docker/build/alexandreoda/atom.svg)](https://hub.docker.com/r/alexandreoda/atom)
+[![automated](https://img.shields.io/docker/automated/alexandreoda/atom.svg)](https://hub.docker.com/r/alexandreoda/atom)
 
 
 ## INTRODUCTION
 
-Ce repository contient le fichier Dockerfile de [chromium](https://www.chromium.org) pour [docker](https://www.docker.com), mis à jour automatiquement dans le [docker hub](https://hub.docker.com/r/alexandreoda/chromium/) public.
+Ce repository contient le fichier Dockerfile de
+- [chromium](https://www.chromium.org)
+
+Mis à jour automatiquement dans le [docker hub  public](https://hub.docker.com/r/alexandreoda/chromium/).
 
 
 ## PREREQUIS
