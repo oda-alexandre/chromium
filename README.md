@@ -1,6 +1,6 @@
 # CHROMIUM
 
-[![dockeri.co](https://dockeri.co/image/alexandreoda/atom)](https://hub.docker.com/r/alexandreoda/atom)
+[![dockeri.co](https://dockeri.co/image/alexandreoda/chromium)](https://hub.docker.com/r/alexandreoda/chromium)
 
 
 ## INDEX
@@ -14,10 +14,10 @@
 
 ## BADGES
 
-[![version](https://images.microbadger.com/badges/version/alexandreoda/atom.svg)](https://microbadger.com/images/alexandreoda/atom)
-[![size](https://images.microbadger.com/badges/image/alexandreoda/atom.svg)](https://microbadger.com/images/alexandreoda/atom")
-[![build](https://img.shields.io/docker/build/alexandreoda/atom.svg)](https://hub.docker.com/r/alexandreoda/atom)
-[![automated](https://img.shields.io/docker/automated/alexandreoda/atom.svg)](https://hub.docker.com/r/alexandreoda/atom)
+[![version](https://images.microbadger.com/badges/version/alexandreoda/chromium.svg)](https://microbadger.com/images/alexandreoda/chromium)
+[![size](https://images.microbadger.com/badges/image/alexandreoda/chromium.svg)](https://microbadger.com/images/alexandreoda/chromium")
+[![build](https://img.shields.io/docker/build/alexandreoda/chromium.svg)](https://hub.docker.com/r/alexandreoda/chromium)
+[![automated](https://img.shields.io/docker/automated/alexandreoda/chromium.svg)](https://hub.docker.com/r/alexandreoda/chromium)
 
 
 ## INTRODUCTION
