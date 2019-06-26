@@ -1,6 +1,6 @@
 # CHROMIUM
 
-[![dockeri.co](https://dockeri.co/image/alexandreoda/chromium)](https://hub.docker.com/r/alexandreoda/chromium)
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Chromium_Material_Icon.png/220px-Chromium_Material_Icon.png" />
 
 
 ## INDEX
@@ -14,10 +14,7 @@
 
 ## BADGES
 
-[![version](https://images.microbadger.com/badges/version/alexandreoda/chromium.svg)](https://microbadger.com/images/alexandreoda/chromium)
-[![size](https://images.microbadger.com/badges/image/alexandreoda/chromium.svg)](https://microbadger.com/images/alexandreoda/chromium")
-[![build](https://img.shields.io/docker/build/alexandreoda/chromium.svg)](https://hub.docker.com/r/alexandreoda/chromium)
-[![automated](https://img.shields.io/docker/automated/alexandreoda/chromium.svg)](https://hub.docker.com/r/alexandreoda/chromium)
+[![pipeline status](https://gitlab.com/oda-alexandre/chromium/badges/master/pipeline.svg)](https://gitlab.com/oda-alexandre/chromium/commits/master)
 
 
 ## INTRODUCTION
