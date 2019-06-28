@@ -6,7 +6,7 @@ MAINTAINER https://www.oda-alexandre.com/
 ENV USER chromium
 ENV LANG fr_FR.UTF-8
 
-# INSTALLATION DES PREREQUIS
+# INSTALL OF PACKAGES
 RUN apt-get update && apt-get install --no-install-recommends -y \
 sudo \
 locales \
@@ -21,32 +21,32 @@ pulseaudio-utils \
 libcanberra-gtk-module \
 libgtk-3-0 && \
 
-# SELECTION DE LA LANGUE FRANCAISE
+# CHANGE LOCALES
 echo ${LANG} > /etc/locale.gen && locale-gen && \
 
-# INSTALLATION DE L'APPLICATION
+# INSTALL APP
 apt-get update && apt-get install -y \
 chromium \
 chromium-l10n \
 chromium-driver && \
 
-# NETTOYAGE
+# CLEANING
 apt-get --purge autoremove -y && \
 apt-get autoclean -y && \
 rm /etc/apt/sources.list && \
 rm -rf /var/cache/apt/archives/* && \
 rm -rf /var/lib/apt/lists/* && \
 
-# AJOUT UTILISATEUR
+# ADD USER
 useradd -d /home/${USER} -m ${USER} && \
 passwd -d ${USER} && \
 adduser ${USER} sudo
 
-# SELECTION UTILISATEUR
+# SELECT USER
 USER ${USER}
 
-# SELECTION ESPACE DE TRAVAIL
+# SELECT WORKING SPACE
 WORKDIR /home/${USER}
 
-# COMMANDE AU DEMARRAGE DU CONTENEUR
+# START THE CONTAINER
 CMD chromium --temp-profile --no-sandbox
