@@ -1,12 +1,14 @@
+# IMAGE TO USE
 FROM debian:stretch-slim
 
+# MAINTAINER
 MAINTAINER https://www.oda-alexandre.com/
 
 # VARIABLES
 ENV USER chromium
 ENV LANG fr_FR.UTF-8
 
-# INSTALL OF PACKAGES
+# INSTALL PACKAGES
 RUN apt-get update && apt-get install --no-install-recommends -y \
 sudo \
 locales \
@@ -49,4 +51,4 @@ USER ${USER}
 WORKDIR /home/${USER}
 
 # START THE CONTAINER
-CMD chromium --temp-profile --no-sandbox
+CMD chromium --temp-profile --no-sandbox \
