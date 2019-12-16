@@ -3,6 +3,7 @@ FROM debian:stretch-slim
 LABEL authors https://www.oda-alexandre.com/
 
 ENV USER chromium
+ENV HOME /home/${USER}
 ENV LOCALES fr_FR.UTF-8
 
 RUN echo -e '\033[36;1m ******* INSTALL PACKAGES ******** \033[0m'; \
