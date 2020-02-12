@@ -1,6 +1,6 @@
 # CHROMIUM
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Chromium_Material_Icon.png/220px-Chromium_Material_Icon.png" width="200" height="200"/>
+<img src="https://assets.gitlab-static.net/uploads/-/system/project/avatar/12904437/Chromium_Material_Icon.png" width="200" height="200"/>
 
 ## INDEX
 
