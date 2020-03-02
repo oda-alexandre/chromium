@@ -4,12 +4,10 @@ LABEL authors https://www.oda-alexandre.com
 
 ENV USER chromium
 ENV HOME /home/${USER}
-ENV LOCALES fr_FR.UTF-8
 
 RUN echo -e '\033[36;1m ******* INSTALL PACKAGES ******** \033[0m' && \
   apt update && apt install --no-install-recommends -y \
   sudo \
-  locales \
   ca-certificates \
   x11-xserver-utils \
   dirmngr \
@@ -20,9 +18,6 @@ RUN echo -e '\033[36;1m ******* INSTALL PACKAGES ******** \033[0m' && \
   pulseaudio-utils \
   libcanberra-gtk-module \
   libgtk-3-0
-
-RUN echo -e '\033[36;1m ******* CHANGE LOCALES ******** \033[0m' && \
-  locale-gen ${LOCALES}
 
 RUN echo -e '\033[36;1m ******* INSTALL APP ******** \033[0m' && \
   apt update && apt install -y \
