@@ -1,0 +1,18 @@
+version: "3.7"
+
+services:
+  chromium:
+    container_name: chromium
+    image: alexandreoda/chromium
+    privileged: false
+    environment:
+      - DISPLAY
+    cap_add:
+      - NET_ADMIN
+    volumes:
+      - "${HOME}:/home/chromium"
+      - "/tmp/.X11-unix/:/tmp/.X11-unix/"
+      - "/dev/snd:/dev/snd"
+      - "/dev/shm:/dev/shm"
+      - "/var/run/dbus:/var/run/dbus"
+    network_mode: host
