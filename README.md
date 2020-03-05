@@ -41,7 +41,21 @@ Automatically updated on :
 ### DOCKER RUN
 
 ```\
-docker  run -d --name chromium -v ${HOME}:/home/chromium -v /tmp/.X11-unix/:/tmp/.X11-unix/ -v /dev/shm:/dev/shm -v /var/run/dbus:/var/run/dbus -e PULSE_SERVER=unix:${XDG_RUNTIME_DIR}/pulse/native -v ${XDG_RUNTIME_DIR}/pulse/native:${XDG_RUNTIME_DIR}/pulse/native --group-add audio --device /dev/snd --cap-add=SYS_ADMIN -e DISPLAY -p 80 -p 443 alexandreoda/chromium
+docker run -d \
+--name chromium \
+--group-add audio \
+--device /dev/snd \
+--cap-add=SYS_ADMIN \
+-e PULSE_SERVER=unix:${XDG_RUNTIME_DIR}/pulse/native \
+-e DISPLAY \
+-v ${HOME}:/home/chromium \
+-v /tmp/.X11-unix/:/tmp/.X11-unix/ \
+-v /dev/shm:/dev/shm \
+-v /var/run/dbus:/var/run/dbus \
+-v ${XDG_RUNTIME_DIR}/pulse/native:${XDG_RUNTIME_DIR}/pulse/native \
+-p 80 \
+-p 443 \
+alexandreoda/chromium
 ```
 
 ### DOCKER COMPOSE
