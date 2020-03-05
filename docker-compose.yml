@@ -4,15 +4,21 @@ services:
   chromium:
     container_name: chromium
     image: alexandreoda/chromium
+    restart: "no"
     privileged: false
+    devices:
+      - /dev/snd
+    cap_add:
+      - SYS_ADMIN
     environment:
       - DISPLAY
-    cap_add:
-      - NET_ADMIN
+      - PULSE_SERVER=unix:${XDG_RUNTIME_DIR}/pulse/native
     volumes:
       - "${HOME}:/home/chromium"
       - "/tmp/.X11-unix/:/tmp/.X11-unix/"
-      - "/dev/snd:/dev/snd"
       - "/dev/shm:/dev/shm"
       - "/var/run/dbus:/var/run/dbus"
-    network_mode: host
+      - "${XDG_RUNTIME_DIR}/pulse/native:${XDG_RUNTIME_DIR}/pulse/native"
+    ports:
+      - "443"
+      - "80"
