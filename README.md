@@ -3,11 +3,10 @@
 ![logo](https://assets.gitlab-static.net/uploads/-/system/project/avatar/12904437/Chromium_Material_Icon.png)
 
 - [CHROMIUM](#chromium)
-  - [INDEX](#index)
   - [BADGES](#badges)
   - [INTRODUCTION](#introduction)
   - [PREREQUISITES](#prerequisites)
-  - [INSTALL](#install)
+  - [BUILD](#build)
     - [DOCKER RUN](#docker-run)
     - [DOCKER COMPOSE](#docker-compose)
   - [LICENSE](#license)
@@ -51,6 +50,7 @@ docker run -d \
 -v /dev/shm:/dev/shm \
 -v /var/run/dbus:/var/run/dbus \
 -v ${XDG_RUNTIME_DIR}/pulse/native:${XDG_RUNTIME_DIR}/pulse/native \
+-v /etc/localtime:/etc/localtime:ro \
 -p 80 \
 -p 443 \
 alexandreoda/chromium
@@ -80,6 +80,7 @@ services:
       - "/dev/shm:/dev/shm"
       - "/var/run/dbus:/var/run/dbus"
       - "${XDG_RUNTIME_DIR}/pulse/native:${XDG_RUNTIME_DIR}/pulse/native"
+      - "/etc/localtime:/etc/localtime:ro"
     ports:
       - "443"
       - "80"
